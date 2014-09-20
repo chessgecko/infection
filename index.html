@@ -1,8 +1,12 @@
 <!doctype html>
 <html>
 <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYeefXRwd0FMD6gp16jl824mTKQZ2dFL4">
+  </script>
   <meta charset="utf-8">
   <title></title>
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
@@ -11,24 +15,44 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div class="Section1">
+
+      <div class="taggedText" id="KillerNamed">Zombie 237 AKA CHRIS B LAVARTE HAS EATEN YOUR BRAINS</div>
+
+      <img src="Zombo/elements/blood.png">
+      <div class="taggedText" style="top: 100px;" id="YouNamed">Welcome to the winning team zombie 238 or better yet...</div>
+
+      <div class="taggedText"><input type="textbox" id="taggedName" value="enter name here"></input></div>
 
     </div>
 
-    <div class="tagged">
-      <div id="taggedText">Zombie 237 AKA CHRIS B <br> LAVARTE HAS EATEN YOUR BRAINS</div>
-      <form id="taggedButton">
+    <div class="Section2">
+      <div class="taggedText" style="top: 30px;">So what is there to do now that you are a brainless zombie?</div>
+      <img style="top: 100px;" src="Zombo/elements/questionDeath.png">
+      <div class="taggedText" style="top: 150px;">The answer is obvious, make more zombies!</div>
 
-        <input type="submit" value="continue">      
-      </form>
+
+    </div>
+    <div class="Section3">
+      <div class="leftText" style="">Send this link to infect others</div>
+      <div class="leftText"  style=""><a id="myLink" href="http://SUPERORGANDONOR.org/238">http://SUPERORGANDONOR.org/238</a></div>
+      <div class="leftText" style="">Click this link to see how many people you infected!</div>
+      <div class="leftText" ><a id="myProgress" href="http://SUPERORGANDONOR.org/progress/238">http://SUPERORGANDONOR.org/progress/238</a></div>
+
+
+
+    </div>
+    <div class="Section4">
+      <div class="leftText" style="color: #a65959;">Taking over the World!</div>
+      <div id="map-canvas"></div>
     </div>
 
-    <div class="footer">
   </div>
-</div>
 
 
-<script src="scripts/main.js"></script>
+  <script src="app/scripts/main.js"></script>
+  <script src="app/scripts/maps.js"></script>
+
 
 </body>
 </html>
